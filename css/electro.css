@@ -1,0 +1,1443 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+
+
+/* The full-screen overlay with a semi-transparent background */
+    .overlay-container {
+        position: absolute;
+        top: 130px;
+        left: 0;
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 50;
+        /* background-color: rgba(0, 0, 0, 0.6); Semi-transparent background */
+    }
+    .overlay-content {
+        position: absolute;
+        bottom: 45px;
+        
+        color: white;
+        font-weight:900;
+        background-color: rgba(0, 0, 0, 0.5); /* Adds a transparent black background */
+        padding: 40px;
+        /* border-radius: 10px; */
+        /* max-width: 90%; */
+        width: 100%;
+    }
+    
+    .overlay-content h1 {
+        margin-bottom: 20px;
+        font-size: 2.5em;
+
+    }
+    
+    .overlay-content p {
+        /* font-size: 1.2em; */
+        margin-bottom: 20px;
+    }
+    
+    .register-btn {
+        text-decoration: none;
+        background-color: #28a745;
+        padding: 15px 25px;
+        color: white;
+        font-weight: bolder;
+        border-radius: 5px;
+        font-size: 1em;
+        transition: background-color 0.3s ease;
+    }
+    
+    .register-btn:hover {
+        background-color: #218838;
+    }
+    
+    @media (min-width: 768px) {
+        .overlay-content h1 {
+            font-size: 3.5em;
+        }
+    
+        .overlay-content p {
+            font-size: 1.5em;
+        }
+    
+        .register-btn {
+            font-size: 1.2em;
+        }
+    }
+    
+    @media (min-width: 1024px) {
+        .overlay-content h1 {
+            font-size: 4em;
+        }
+    
+        .overlay-content p {
+            font-size: 1.7em;
+        }
+    
+        .register-btn {
+            font-size: 1.5em;
+        }
+    }
+
+
+/* welcome end */
+
+
+
+
+
+/* Main Header Styles */
+
+.header {
+    height: 65px;
+    background-color: #100B1D;
+    display: flex;
+    position: fixed;
+    z-index: 51; /* Increased z-index */
+    width: 100vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* Logo and Text Container */
+.icons {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.icons img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.icons p {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+/* Navbar Container */
+.navbar-container {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 100%;
+}
+
+/* Navigation Menu */
+.nav-menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin-right: 50px;
+}
+
+.nav-item {
+    margin-left: 30px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding-bottom: 5px;
+    transition: color 0.3s;
+}
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: yellow;
+    transition: all 0.8s ease-in;
+    transform: translateX(-50%);
+}
+
+.nav-link:hover::before {
+    width: 100%;
+}
+
+.nav-link:hover {
+    color: #ffcc00;
+}
+
+/* Responsive Styles */
+
+/* Tablets and larger phones */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none; /* Hide the menu on smaller screens */
+        position: absolute;
+        top: 65px;
+        right: 0;
+        background-color: #100B1D;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        z-index: 3; /* Increased z-index to ensure it's on top */
+    }
+
+    .nav-item {
+        margin: 15px 0; /* Space between items in mobile view */
+    }
+
+    .nav-link {
+        padding: 10px 20px;
+        font-size: 1.2em;
+    }
+
+    .nav-link::before {
+        height: 0; /* Remove underline animation on small screens */
+    }
+
+    /* Toggle Menu Icon */
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 1.5em;
+        color: white;
+        margin-right: 20px;
+    }
+
+    /* Display the nav menu when the active class is added */
+    .nav-menu.active {
+        display: flex; /* Show the menu when active */
+    }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+    .icons p {
+        font-size: 1em; /* Reduce logo text size */
+    }
+
+    .nav-link {
+        font-size: 1em; /* Adjust font size for smaller screens */
+    }
+}
+
+
+/* General styles for the toggle menu */
+.menu-toggle {
+    display: none; /* Hidden by default */
+    cursor: pointer;
+    font-size: 1.8em;
+    color: white;
+    position: absolute;
+    
+    right: 5px;
+}
+
+.menu-toggle i {
+    font-size: 1.8rem;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Show the toggle icon on mobile */
+    }
+}
+
+/* navbar ends */
+
+
+
+
+
+
+
+/* menubar starts */
+
+.tsec-bar {
+    height: 65px;
+    background-color: #0e131f;
+    /* position: relative; */
+    /* z-index:auto; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /* Space between logo and nav items */
+    padding: 0 2vw; /* Add padding for better alignment */
+}
+
+.tsec-bar ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none; /* Remove bullet points */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.logohead {
+    color: white;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+#tseclogo {
+    /* margin-top: 5px; */
+    height: 50px;
+}
+
+/* Media query for tablets and smaller devices */
+@media (max-width: 768px) {
+    .tsec-bar {
+        height: auto; /* Allow the bar to adjust its height */
+        flex-direction: row; /* Stack logo and nav on smaller screens */
+        padding: 1vw 3vw; /* Add padding for smaller screens */
+    }
+
+    .tsec-bar ul {
+        justify-content: space-around; /* Center align nav items */
+        width: 100%; /* Full width for better alignment */
+    }
+
+    .logohead {
+        font-size: 1.2rem; /* Adjust font size for smaller screens */
+    }
+
+    #tseclogo {
+        height: 40px; /* Adjust logo size for better fit */
+    }
+}
+
+/* Media query for very small screens */
+@media (max-width: 480px) {
+    .tsec-bar {
+        padding: 1vw 2vw; /* Reduce padding on very small screens */
+    }
+
+    .logohead {
+        font-size: 1rem; /* Further reduce font size for tiny screens */
+    }
+
+    #tseclogo {
+        height: 35px; /* Smaller logo for better fit */
+    }
+
+    .tsec-bar ul {
+        flex-direction: row; /* Stack menu items vertically */
+        align-items: center; /* Center menu items */
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* ABOUT PAGE */
+
+
+/* Electroverse */
+
+.abt {
+    background-color: white;
+    /* margin-top: 3vh
+    ; Use viewport height for better responsiveness */
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 2vw; /* Use viewport width for padding */
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.abtinfo {
+    padding: 2vw;
+    width: 50%;
+    background-color: white;
+    box-sizing: border-box; /* Ensure padding is included in width calculation */
+}
+
+.abthead {
+    width: 100%;
+    background-color: white;
+    opacity: 0; /* Start with element hidden */
+    transition: opacity 0.5s ease-out; /* Optional: Smooth transition */
+    transform: translateY(20px); /* Start slightly below */
+}
+
+.animate {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.abthead.animate {
+    opacity: 1; /* Final state */
+    animation: fadeIn 1s ease-in-out;
+}
+
+.abthead h1 {
+    font-size: 3rem; /* Use rem for better scaling */
+    font-weight: bold;
+    margin-top: 5vh;
+}
+
+.abttxt {
+    font-size: 1rem;
+    margin-top: 3vh;
+    /* font-weight: bold; */
+}
+
+.abtimg {
+    background-color: white;
+    width: 30%;
+    height: auto; /* Ensure height adjusts based on content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.abtimg img {
+    height: 50vh; /* Use vh for responsive image scaling */
+    max-width: 100%;
+    object-fit: contain; /* Keep aspect ratio */
+}
+
+/* Media query for tablets and small laptops */
+@media (max-width: 1024px) {
+    .abt {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+    }
+
+    .abtimg {
+        width: 100%; /* Full width for image */
+        margin-bottom: 2vh; /* Add space between image and text */
+    }
+
+    .abtinfo {
+        width: 100%; /* Full width for text */
+        padding: 4vw;
+    }
+
+    .abthead h1 {
+        font-size: 2.5rem;
+    }
+
+    .abttxt {
+        font-size: 1em;
+    }
+
+    .abtimg img {
+        height: auto; /* Allow image to scale naturally */
+        max-width: 100%;
+    }
+}
+
+/* Media query for mobile phones */
+@media (max-width: 768px) {
+    .abt {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+    }
+
+    .abtimg {
+        width: 100%; /* Full width for image on small screens */
+        margin-bottom: 2vh;
+    }
+
+    .abtinfo {
+        width: 100%; /* Full width for text */
+        padding: 5vw; /* Increase padding for small screens */
+    }
+
+    .abthead h1 {
+        font-size: 2rem;
+    }
+
+    .abttxt {
+        font-size: 1.2rem;
+    }
+
+    .abtimg img {
+        height: auto; /* Allow image to scale naturally */
+        max-width: 100%;
+    }
+}
+
+/* Media query for extra small screens */
+@media (max-width: 480px) {
+    .abtinfo {
+        padding: 6vw; /* Extra padding for very small screens */
+    }
+
+    .abthead h1 {
+        font-size: 1.8rem; /* Smaller font size for extra small screens */
+    }
+
+    .abttxt {
+        font-size: 1rem; /* Smaller text for better readability */
+    }
+
+    .abtimg img {
+        height: auto; /* Allow image to scale naturally */
+        max-width: 100%;
+    }
+}
+
+/* Media query for large desktops */
+@media (min-width: 1200px) {
+    .abthead h1 {
+        font-size: 4rem; /* Increase font size for large screens */
+    }
+
+    .abttxt {
+        font-size: 1.5rem; /* Larger text for better readability */
+    }
+
+    .abtimg img {
+        height: 60vh; /* Larger image for big screens */
+    }
+}
+
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+    
+    .abtinfo {
+        width: 100%; /* Full width for smaller screens */
+        padding: 3vw;
+    }
+
+    .abtimg {
+        width: 100%; /* Full width for smaller screens */
+        margin-top: 3vh; /* Add margin for spacing */
+    }
+
+    .abtimg img {
+        height: 40vh;
+    }
+
+    .abthead h1 {
+        font-size: 2.5rem; /* Smaller font size on mobile */
+    }
+
+    .abttxt {
+        font-size: 1.4rem; /* Adjust text size */
+    }
+}
+
+
+/* about college */
+/* Section Container */
+.abt-elec {
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+    width: 100%;
+    background-color: aliceblue;
+    text-align: center;
+}
+
+/* Image Section */
+.depimg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.depimg img {
+    width: 80%;
+    align-self: center;
+}
+
+/* Text Section */
+.deptxt {
+    width: 100%;
+    padding: 90px 0; /* Adjust padding for better spacing */
+}
+
+.deptxt p{
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.dep1 {
+    font-weight: bold;
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .depimg img {
+        width: 90%; /* Adjust image size for tablets */
+    }
+
+    .dep1 {
+        font-size: 1.8rem; /* Adjust heading size */
+    }
+
+    .deptxt p {
+        font-size: 1rem;
+        line-height: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .depimg img {
+        width: 100%; /* Full width image on small devices */
+    }
+
+    .dep1 {
+        font-size: 1.5rem; /* Smaller heading size */
+    }
+
+    .deptxt p {
+        font-size: 0.9rem;
+        line-height: 25px;
+    }
+}
+
+
+
+/* challenge section begins */
+
+/* General Styles for Challenges Section */
+.challenges {
+    display: flex;
+    background-color:white;
+    flex-direction: row; /* Items side-by-side on larger screens */
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    padding: 50px;
+    border-bottom: solid 2px black;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.infotxt, .infoimg {
+    width: 50%; /* Each takes half the width on larger screens */
+    margin-bottom: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.infoimg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.infoimg img {
+    width: 100%; /* Image takes full width of its container */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 600px; /* Limit maximum image width */
+    box-shadow: 0px 14px 16px rgba(0, 0, 0, 0.3);
+}
+
+.infotxt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.infotxt .h11 {
+    font-size: 2.5em; /* Font scaling for large screens */
+    font-weight: bold;
+}
+
+.infotxt .h12 {
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+.infotxt .h13 {
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+
+/* Button styles */
+.btn-reg, .btn-lead {
+    font-size: 1em;
+    font-weight: bold;
+    width: 200px;
+    height: 50px;
+    border: solid 2px black;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    margin: 20px 20px;
+    transition: 0.7s ease-in;
+}
+
+.btn-reg {
+    background-color: white;
+    color: black;
+}
+
+.btn-reg:hover {
+    background-color: black;
+    color: white;
+}
+
+.btn-lead {
+    background-color: black;
+    color: white;
+}
+
+.btn-lead:hover {
+    background-color: white;
+    color: black;
+    border: solid 2px black;
+}
+
+/* Responsive Styles */
+
+/* For larger screens (Tablets, Desktops) */
+@media (min-width: 668px) {
+    .challenges {
+        flex-direction: row; /* Items side by side */
+        justify-content: space-around;
+    }
+
+    .infotxt {
+        width: 50%; /* Text on left, image on right */
+        text-align: left;
+    }
+
+    .infoimg {
+        width: 50%;
+        padding: 20px;
+    }
+
+    .infotxt .h11 {
+        font-size: 3.5em; /* Increase font size for larger screens */
+    }
+
+    .infotxt .h12 {
+        font-size: 1.5em;
+    }
+
+    .infotxt .h13 {
+        font-size: 1.5em;
+    }
+
+
+    .btn-reg, .btn-lead {
+        width: 200px; /* Larger button for bigger screens */
+        height: 55px;
+    }
+}
+
+/* Tablets and smaller (Portrait and larger phones) */
+@media (max-width: 669px) {
+    .challenges {
+        flex-direction: column; /* Stack vertically */
+        align-items: center;
+    }
+
+    .infoimg, .infotxt {
+        width: 90%; /* Full width for text and image */
+    }
+
+    .infoimg img {
+        max-width: 400px; /* Reduce image size */
+    }
+
+    .infotxt .h11 {
+        font-size: 2.2em; /* Reduce font size */
+    }
+
+    .infotxt .h12 {
+        font-size: 1.5em;
+    }
+
+    .infotxt .h13 {
+        font-size: 1.2em;
+    }
+
+    .btn-reg, .btn-lead {
+        width: 180px;
+        height: 45px;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+    .challenges {
+        flex-direction: column; /* Stack text and image vertically */
+    }
+
+    .infoimg img {
+        max-width: 300px; /* Further reduce image size */
+    }
+
+    .infotxt .h11 {
+        font-size: 1.8em; /* Further decrease font size */
+    }
+
+    .infotxt .h12 {
+        font-size: 1rem;
+    }
+
+    .infotxt .h13 {
+        font-size: 1.1em;
+    }
+
+    .btn-reg, .btn-lead {
+        width: 180px; /* Decrease width */
+        height: 45px; /* Decrease height */
+    }
+}
+
+
+
+/* challenge section ends */
+
+
+
+
+
+/* timeline begins */
+
+
+.timeline {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.timeline-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-left: 40px;
+}
+
+.timeline-container::before {
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #28a745;
+}
+
+.timeline-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -40px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #28a745;
+    border: 4px solid white;
+}
+
+.timeline-item.red::before {
+    background-color: #dc3545;
+}
+
+.timeline-content {
+    background-color: #28a745;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.timeline-item.red .timeline-content {
+    background-color: #dc3545;
+}
+
+.timeline-content h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.timeline-content p {
+    font-size: 0.9em;
+}
+
+.green {
+    background-color: #28a745;
+}
+
+.red {
+    background-color: #dc3545;
+}
+
+
+/* timeline ends */
+
+
+
+
+
+
+
+
+
+
+
+
+/* Default Styles for Venue Section */
+.venue-container {
+    width: 100%;
+    padding: 30px; /* Base padding for all devices */
+    background-color: #fffafa;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.venue {
+    width: 100%;
+    max-width: 5000px; /* Set a max-width to prevent overflow on larger screens */
+    background-color: #fff;
+    padding: 30px 20px; /* Adjusted padding */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: solid 10px black; */
+    border-radius: 15px;
+    /* border-radius: 5px; */
+    position: relative;
+    box-sizing: border-box;
+}
+
+.venue .locontent {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    box-sizing: border-box;
+}
+
+.venue iframe {
+    width: 100%;
+    max-width: 100%; /* Ensure it doesn't overflow container width */
+    height: 300px; /* Default height */
+    box-shadow: 0px 14px 16px rgba(0, 0, 0, 0.3);
+    border: none;
+}
+
+.venue img {
+    box-shadow: 0px 14px 16px rgba(0, 0, 0, 0.3); 
+    height: auto; /* Maintain aspect ratio */
+    max-width: 600px; /* Limit max width */
+    margin-top: 20px; /* Margin for spacing */
+}
+
+.venue p {
+    margin-top: 20px; /* Adjusted margin */
+    font-size: 1.8em; /* Base font-size */
+    font-weight: bold;
+}
+
+.loc h7 {
+    font-size: 1.2em; /* Base font-size */
+    color: grey;
+}
+
+.loc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center; /* Center text for all device widths */
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .venue-container {
+        padding: 25px; /* Adjusted padding */
+    }
+
+    .venue {
+        padding: 25px; /* Adjusted padding */
+    }
+
+    .venue .locontent {
+        flex-direction: column; /* Stack vertically */
+    }
+
+    .venue iframe {
+        height: 250px; /* Adjusted height */
+    }
+
+    .venue img {
+        margin-top: 15px; /* Adjusted margin */
+        max-width: 400px; /* Limit max width */
+
+    }
+
+    .venue p {
+        font-size: 1.6em; /* Slightly smaller font-size */
+        margin-top: 15px; /* Adjusted margin */
+    }
+
+    .loc h7 {
+        font-size: 1.1em; /* Adjusted font-size */
+    }
+}
+
+@media (max-width: 768px) {
+    .venue-container {
+        padding: 20px; /* Further reduced padding */
+    }
+
+    .venue {
+        padding: 20px; /* Further reduced padding */
+    }
+
+    .venue .locontent {
+        flex-direction: column; /* Stack vertically */
+    }
+
+    .venue iframe {
+        height: 200px; /* Further reduced height */
+    }
+
+    .venue img {
+        margin-top: 10px; /* Adjusted margin */
+    }
+
+    .venue p {
+        font-size: 1.4em; /* Further reduced font-size */
+        margin-top: 10px; /* Adjusted margin */
+    }
+
+    .loc h7 {
+        font-size: 1em; /* Adjusted font-size */
+    }
+}
+
+@media (max-width: 480px) {
+    .venue-container {
+        padding: 15px; /* Minimal padding */
+    }
+
+    .venue {
+        padding: 15px; /* Minimal padding */
+    }
+
+    .venue .locontent {
+        flex-direction: column; /* Stack vertically */
+    }
+
+    .venue iframe {
+        height: 150px; /* Reduced height */
+        width: 100vw; /* Full viewport width for small screens */
+        max-width: 100%; /* Prevent overflow */
+        /* margin-left: -15px; Align the map to the edge */
+    }
+
+    .venue img {
+        width: 100vw; /* Full viewport width for small screens */
+        max-width: 100%; /* Prevent overflow */
+        /* margin-left: -15px; */
+
+        margin-top: 5px; /* Adjusted margin */
+    }
+
+    .venue p {
+        font-size: 1.2em; /* Further reduced font-size */
+        margin-top: 5px; /* Adjusted margin */
+    }
+
+    .loc h7 {
+        font-size: 0.9em; /* Adjusted font-size */
+    }
+}
+
+
+
+/* map ends */
+
+
+
+/* countdown begins */
+.count-container {
+    /* height: 400px; */
+    background-color:#100B1D;
+    padding: 40px 20px; /* Padding for space */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px; /* Adds spacing between boxes */
+    box-sizing: border-box;
+}
+
+.counthead{
+    color: white;
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+
+
+
+.countboxmain{
+    /* height: 400px; */
+    width: 100%;
+    background-color:#100B1D;
+    padding: 40px 20px; /* Padding for space */
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px; /* Adds spacing between boxes */
+    box-sizing: border-box;
+}
+
+.count-box {
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color:; */
+    border-top: solid yellow 3px;
+    padding: 10px 15px;
+    /* border-radius: 10px; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.time-box {
+    font-size: 2.5rem; /* Larger size for the time */
+    font-weight: bolder;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.label {
+    font-size: 2rem;
+    font-weight: bold;
+    color: beige;
+    text-transform: uppercase;
+}
+
+/* Media Query for responsiveness */
+@media (max-width: 768px) {
+    .count-container {
+        flex-direction: column;
+    }
+
+    .time-box {
+        font-size: 1.5rem;
+    }
+
+    .label {
+        font-size: 0.9rem;
+    }
+}
+
+
+/* milestones */
+/* Milestones Section */
+.miles-container {
+    width: 100%;
+    padding: 40px 20px; /* Padding for space */
+    background-color: #100B1D;
+    color: white;
+    box-sizing: border-box;
+}
+
+.mileshead h1 {
+    font-size: 2.5em;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 30px; /* Space below the header */
+}
+
+.milecontent {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    gap: 20px; /* Space between items */
+    list-style: none;
+    padding: 0;
+}
+
+.milesubhead {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #1A1A2E; */
+    padding: 20px;
+    border-top: solid 3px yellow;
+    /* border-radius: 10px; */
+    box-shadow: 0px 14px 16px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+    width: 200px; /* Set width for each milestone box */
+}
+
+.milesubhead:hover {
+    transform: translateY(-10px); /* Animation on hover */
+}
+
+.milesubhead .mile {
+    font-size: 2.5em;
+    margin: 10px 0;
+}
+
+.milesubhead .mile:first-child {
+    font-weight: bold;
+    font-size: 1.8em;
+}
+
+.milesubhead .mile:last-child {
+    font-size: 3.5rem;
+    color: #fff; /* Golden color for milestone numbers */
+}
+
+/* Responsive Styles */
+
+/* For tablets and larger phones */
+@media (max-width: 1024px) {
+    .milecontent {
+        gap: 15px; /* Reduce space between items */
+    }
+
+    .milesubhead {
+        padding: 15px;
+        width: 180px; /* Adjusted width for smaller screens */
+    }
+
+    .milesubhead .mile {
+        font-size: 3.3em; /* Reduce text size */
+    }
+
+    .milesubhead .mile:last-child {
+        font-size: 4em; /* Adjusted size for milestone numbers */
+    }
+}
+
+/* For smaller phones */
+@media (max-width: 768px) {
+    .milecontent {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+    }
+
+    .milesubhead {
+        width: 100%; /* Full width for each milestone on small screens */
+        padding: 10px;
+    }
+
+    .milesubhead .mile {
+        font-size: 1.2em;
+    }
+
+    .milesubhead .mile:last-child {
+        font-size: 3.8em;
+    }
+}
+
+
+
+
+/* miles end */
+
+
+/* faculty */
+.faculty{
+    height: 900px;
+    width: 100%;
+    background-color: white;
+    border-top: solid 2px black;
+}
+
+
+
+/* upperfoot SECTION */
+.upperfoot{
+    height: 350px;
+    position: relative;
+    width: 100%;
+    background-color: skyblue;
+    display: flex;
+    justify-content: center;
+}
+
+.minifoot{
+    width: 62%;
+    position: absolute;
+    top: -30%;
+    height: 370px;
+    background-color: white;
+    border-radius: 0 0 100px 100px;
+    border-top: solid 1px black ;
+}
+
+
+
+/* FOOTER SECTION BEGINS */
+.footer {
+    height: auto; /* Allow footer height to adjust automatically */
+    width: 100%;
+    background-color: #100B1D;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0; /* Add padding for spacing */
+    box-sizing: border-box;
+}
+
+
+.mainf1, .mainf2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Main section 1 */
+.mainf1 {
+    color: lightgrey;
+    padding: 10px;
+}
+
+.mainf1 .F11 {
+    font-size: 1.8em; /* Responsive font size */
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.mainf1 i {
+    margin-right: 10px;
+    margin-top: 35px;
+    margin-bottom: 30px;
+    font-size: 2em; /* Icon size */
+}
+
+/* Main section 2 */
+.mainf2 {
+    color: white;
+    padding: 10px;
+}
+
+.mainf2 .F12 {
+    font-size: 1.8em; /* Responsive font size */
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+/* Contact information */
+.ph, .mail {
+    color: lightgrey;
+    margin-bottom: 7px;
+    font-size: 1.1em;
+}
+
+.ph i, .mail i {
+    margin-right: 10px;
+}
+
+/* Icon hover effects */
+.fa-youtube:hover {
+    color: #FF0000;
+    cursor: pointer;
+}
+
+.fa-linkedin-in:hover {
+    color: #0077B5;
+    cursor: pointer;
+}
+
+.fa-instagram:hover {
+    color: #E1306C;
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+
+/* For tablets and larger phones */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column; /* Stack the footer content vertically */
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    .mainf1, .mainf2 {
+        width: 90%; /* Take most of the width on smaller screens */
+        padding: 10px;
+    }
+
+    .mainf1 .F11, .mainf2 .F12 {
+        font-size: 1.5em; /* Adjust font size */
+    }
+
+    .ph, .mail {
+        font-size: 1em; /* Adjust text size for contact details */
+    }
+
+    .mainf1 i, .mainf2 i {
+        font-size: 1.8em; /* Adjust icon size */
+    }
+}
+
+/* For small phones */
+@media (max-width: 480px) {
+    .footer {
+        padding: 10px 0;
+    }
+
+    .mainf1 .F11, .mainf2 .F12 {
+        font-size: 1.2em; /* Further decrease font size for small screens */
+    }
+
+    .ph, .mail {
+        font-size: 0.9em; /* Further decrease text size */
+    }
+
+    .mainf1 i, .mainf2 i {
+        font-size: 1.5em; /* Adjust icon size */
+    }
+}
+
+

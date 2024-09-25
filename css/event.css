@@ -1,0 +1,70 @@
+
+/* Navbar CSS */
+.navbar {
+    background-color: #412234;
+    overflow: hidden;
+    position: fixed;
+    width: 100vw;
+    /* height: 6vh; */
+}
+
+.navbar-container {
+    height: 6vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:5px 10px;
+}
+
+.logo a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-menu {
+    list-style: none;
+    /* margin: 0; */
+    padding: 0;
+    display: flex;
+    margin-right: 50px;
+
+    /* opacity: 0%; */
+}
+
+.nav-item {
+    margin-left: 20px;
+    position: relative;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    padding: 5px 0px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: yellow;
+    transition: all 0.8s ease-in;
+    transform: translateX(-50%);
+}
+
+.nav-link:hover::before {
+    width: 100%;
+}
+
+.nav-link:hover {
+    color: #ffcc00; /* Optional: Change text color on hover */
+}
+
