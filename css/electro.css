@@ -1119,10 +1119,9 @@ body{
 
 .countboxmain{
     /* height: 400px; */
-    width: 100%;
+    width: 100vw;
     background-color:#100B1D;
     padding: 40px 20px; /* Padding for space */
-    display: flex;
     /* flex-direction: column; */
     justify-content: space-evenly;
     align-items: center;
