@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    
+    
+</head>
+<body>
+    <section id="S1"> 
+        <p id="H1"><a href="https://tsec.edu/">TSEC</a></p>
+        <div class="input-container">
+            <input type="text" id="i1" class="in" placeholder="Name" autocomplete="off">
+            <div class="pass">
+                <input type="password" id="i2" class="in" placeholder="Password" autocomplete="off">
+                <i id="img" class="fa-solid fa-eye" onclick="togglePasswordVisibility()"></i>
+                <!-- <img src="img/eyeclose.png" alt="Show/Hide Password" onclick="togglePasswordVisibility()"> -->
+            </div>
+            <div class="inc"><p id="t2"></p></div>
+            <div class="inc2"><p id="t3" onclick="forget();">forget password?</p></div>
+            <button class="btn" id="bt" onclick="submitForm()">Login</button>
+                 
+            <p id="sign">already have an account? <a href="signup.html">signup
+                <i class="fa-solid fa-user-plus"></i>
+                    <a/></p>
+                <i class="fa-sharp fa-solid fa-folder-arrow-up"></i>
+                <!-- <i class="fa-solid fa-upload"></i> -->
+        </div>
+    </section>
+
+    <script src="login.js"></script>
+</body>
+</html>

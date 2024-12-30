@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <link rel="stylesheet" href="./css/signup.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+    <section class="container">
+        <div class="input-container">
+        <p id="h1">
+            <a href="https://tsec.edu/">TSEC</a>
+        </p>
+        <input type="number" id="i1" class="in" placeholder="Phone Number" autocomplete="off" >
+        <input type="text" id="i3" class="in" placeholder="Full Name" autocomplete="off">
+        <input type="text" id="i4" class="in" placeholder="Username" autocomplete="off">
+        <input type="password" id="i2" class="in" placeholder="Password" autocomplete="off">
+        <input type="password" id="i5" class="in" placeholder="Re-enter the Password" autocomplete="off">
+        <div class="txt2"><p id="txt" onclick="forget();"><br></p></div>
+        <button class="btn" id="bt1" onclick="submitForm()">Sign Up</button>
+        <div class="txt-container">
+        <p id="sign">Already have an account? <a href="login.html">Log in<a/></p></div>
+        </div>
+    </section>
+    <script src="signup.js"></script>
+    
+</body>
+</html>
+

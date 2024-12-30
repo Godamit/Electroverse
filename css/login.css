@@ -1,0 +1,161 @@
+body {
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#S1 {
+    /* height: 500px; */
+    width: 90%;
+    max-width: 400px;
+    background-color: yellowgreen;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#H1 {
+    margin-bottom: 20px;
+    font-size: 5rem;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+#H1 a{
+    text-decoration: none;
+    color: black;
+    outline: none;
+
+}
+
+#sign a{
+    text-decoration: none;
+}
+
+.input-container {
+    width: 100%;
+    margin-bottom: 30px;
+    background-color: lightgreen;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.pass {
+    position: relative;
+    width: 100%;
+}
+
+#img {
+    position: absolute;
+    height: 25px;
+    right: 10px;
+    top: 60%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.in {
+    margin-top: 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+input[type='password'] {
+    padding-right: 40px;
+}
+
+button {
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+#t2 {
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 10px;
+    margin-left: 5px;
+    color: brown;
+    text-align: left;
+
+}
+
+
+
+p#t3{
+   color: rgb(106, 106, 240); 
+   cursor: pointer;
+   margin: 0;
+   /* padding: 0; */
+}
+
+div.inc2{
+    text-align: right;
+    width: 100%;
+    height: 25px;
+    margin-bottom: 30px;
+}
+
+div.inc{
+    width: 100%;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    #H1 {
+        font-size: 3rem;
+        
+    }
+
+    .in, button {
+        height: 35px;
+        font-size: 14px;
+    }
+
+    #t3,#t2{
+        font-size: 12px;
+    }
+    #img{
+        margin-bottom: 5px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    #H1 {
+        font-size: 4rem;
+    }
+    
+    
+
+    .in, button {
+        height: 30px;
+        font-size: 12px;
+    }
+}
