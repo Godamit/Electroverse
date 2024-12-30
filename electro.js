@@ -10,7 +10,7 @@ menuToggle.addEventListener('click', () => {
 });
 
 navMenu.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
+    // navMenu.classList.toggle('active');
 });
 
 
