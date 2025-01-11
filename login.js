@@ -32,7 +32,11 @@ function submitForm() {
     formData.append('pass',pass);
     localStorage.setItem('key',name+pass);
 
+<<<<<<< Updated upstream
     fetch("./../login.php", {
+=======
+    fetch("./login.php", {
+>>>>>>> Stashed changes
         method: 'POST',
         body: formData
     })
@@ -45,7 +49,11 @@ function submitForm() {
         $('#t2').html("Empty Password");
     }
         if(res == "success"){
+<<<<<<< Updated upstream
             window.location.href = "index.html";
+=======
+            window.location.href = "electro.html";
+>>>>>>> Stashed changes
         }else{
             $('#t2').html("Incorrect Credentials");
         }

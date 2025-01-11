@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="./css/electro.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <scriptsrc="https://kit.fontawesome.com/d06c559023.js" crossorigin="anonymous"></scriptsrc=>
 
 </head>
 <body>
@@ -31,13 +33,13 @@
                   <a href="#" class="nav-link" id="scrollBtn" onclick="Scrollabt()">About</a>
               </li>
               <li class="nav-item">
-                  <a href="#" class="nav-link">Events</a>
+                  <a href="/Electroverse/css/snippet.html" class="nav-link">Events</a>
               </li>
               <li class="nav-item">
                   <a href="#" class="nav-link">Support</a>
               </li>
               <li class="nav-item">
-                  <a href="#" class="nav-link">Login</a>
+                  <a href="login.html" class="nav-link">Login</a>
               </li>
           </ul>
       </nav>
@@ -55,205 +57,269 @@
     <div class="tsec-bar">
        <ul>
         <li class="icon"><img src="./img/hsnc_logo.jpeg" alt="" id="tseclogo"></li>
-        <li class="logohead">THADOMAL SHAHANI ENGINEERING COLLEGE</li>
-        <li class="icon"><img src="./img/icc.png" alt="" id="tseclogo"></li>
+        <li class="logohead">Thadomal Shahani Engineering College</li>
+        <li class="icon2"><img src="./img/tseclogo.png" alt="" id="tseclogo"></li>
        </ul>
     </div>
 
-<!-- ,menu ends -->
-
-<div class="overlay-container">
-  <div class="overlay-content">
-      <h1>ELECTROVERSE 2024</h1>
-      <p>Join us for an exciting journey of learning and collaboration.</p>
-      <a href="#register" class="register-btn">Register Now</a>
-  </div>
-</div>
-    
-
-<div id="default-carousel" class="relative w-full" data-carousel="slide" style="background-color: #100B1D; z-index: 0;">
-  <!-- Carousel wrapper -->
-  <div class="relative h-[70vh] md:h-[80vh] lg:h-[90vh] overflow-hidden">
-      <!-- Item 1 -->
-      <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="./img/WhatsApp Image 2024-09-05 at 8.11.55 PM.jpeg" class="absolute block max-w-full h-auto top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" alt="Image 1">
-      </div>
-      <!-- Item 2 -->
-      <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="./img/WhatsApp Image 2024-09-05 at 8.12.40 PM (1).jpeg" class="absolute block max-w-full h-auto top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" alt="Image 2">
-      </div>
-      <!-- Item 3 -->
-      <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="./img/WhatsApp Image 2024-09-05 at 8.16.51 PM.jpeg" class="absolute block max-w-full h-auto top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" alt="Image 3">
-      </div>
-  </div>
-</div>
-
-<!-- Add a new div in front of the carousel -->
+ 
 
 
-<!-- Slider indicators -->
-<div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-  <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-  <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-  <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-</div>
 
-<!-- Slider controls -->
-<button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-  <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-      <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-      </svg>
-      <span class="sr-only">Previous</span>
-  </span>
-</button>
-<button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-  <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-      <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-      </svg>
-      <span class="sr-only">Next</span>
-  </span>
-</button>
 
-    <!-- <section class="space" style="height: 500px; width: 100%; background-color: black;">
-        
-    </section> -->
+    <section class="tech_cont">
+      <video class="background-video" autoplay muted loop>
+        <source src="./img/81188-576082864.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <!-- <section class="mango"></section> -->
+      <section class="jackfruit">
+        <section class="jack">
+          <!-- <div class="text-container">
+            <span id="animated-text"></span>
+        </div> -->
+
+        <img src="img/Tech-a-thon’ 25.png" alt="" class="techimg">
+        </section>
+      
+        <section class="fruit"> 
+          <div class="upcardpop"></div>
+          <div class="cards">
+            <div class="hib1">
+              <div class="hibiscus">
+                <h3>23<sup>rd</sup> February</h3>
+                <p>Guidelines</p>
+                <p>Events</p>
+              </div>
+              <div class="hibiscus">
+                <h3>Information Details</h3>
+                <p>About</p>
+                <p>Judge Panel</p>
+              </div>
+            </div>
+            
+            <div class="hib2">
+              <div class="sunflower">
+                <h3>Venue</h3>
+                <p>Thadomal Shahani Engineering College</p>
+                <p>P. G. Kher Marg, Bandra West, Mumbai - 400050</p>
+              </div>
+              <div class="sunflower">
+                <h3>Organized By</h3>
+                <p>TSEC, EXTC Department</p>
+                <p>Electroverse Committee</p>
+              </div>
+            </div>
+            
+          </div>
+        </section>
+      </section>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     <section class="abt">
-        <section class="abtimg">
-            <img src="./img/download.png" alt="">
+      
+    <section class="abtinfo">
+      <section class="abthead">
+        <p id="blurtxt">ABOUT US</p>
+      
+        
+        <h1>What is Electroverse Tsec ?</h1>
+        <section class="abttxt"  ">
+            Electroverse.Comm-TSEC, the technical committee of the Electronics and Telecommunication (EXTC) Department at Thadomal Shahani Engineering College (TSEC), Mumbai, has been at the forefront of fostering innovation and collaboration since its inception in 2003. The committee’s mission is to promote interdisciplinary cooperation and hands-on learning experiences, empowering students to apply theoretical knowledge to real-world challenges.Over the years, Electroverse.Comm has organized a variety of technical events, workshops, and competitions that encourage creativity and teamwork. One of its flagship events is the Non-Stop Hardware Hackathon, a unique platform where students from different departments—such as Computer Science, IT, and Electronics—come together to collaborate on hardware and software solutions. This cross-disciplinary environment enriches the participants' problem-solving approaches, allowing them to leverage diverse perspectives and skills.
           </section>
-      <section class="abtinfo">
-        <section class="abthead">
-          <h1>WHAT IS ELECTROVERSE TSEC ?</h1>
+          <section class="tlink">
+            <a href="https://tsec.edu/">Visit College Website <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+
+          </section>
         </section>
-        <section class="abttxt">
-          Electroverse.Comm-TSEC, the technical committee of the Electronics and Telecommunication (EXTC) Department at Thadomal Shahani Engineering College (TSEC), Mumbai, has been at the forefront of fostering innovation and collaboration since its inception in 2003. The committee’s mission is to promote interdisciplinary cooperation and hands-on learning experiences, empowering students to apply theoretical knowledge to real-world challenges.Over the years, Electroverse.Comm has organized a variety of technical events, workshops, and competitions that encourage creativity and teamwork. One of its flagship events is the Non-Stop Hardware Hackathon, a unique platform where students from different departments—such as Computer Science, IT, and Electronics—come together to collaborate on hardware and software solutions. This cross-disciplinary environment enriches the participants' problem-solving approaches, allowing them to leverage diverse perspectives and skills.
+        
+        <section class="abtimg">
+          <img src="./img/mainlogo.png" alt="">
         </section>
       </section>
       
     </section>
-
-
-    <section class="abt-elec">  
-      <div class="depimg">
-          <img src="./img/extc_department.jpg" alt="Department Image">
-      </div>
-      <div class="deptxt">
-          <h1 class="dep1">DEPARTMENT OF ELECTRONICS AND TELECOMMUNICATION</h1>
-          <p>The Department was established in the year 2002 with a clear view of being a forerunner in the field of Telecommunications. The Department seeks to evolve towards excellence and adapt itself to the rapid advancements in specialized communication-related fields. This Department earlier had the nomenclature of Electronics Engineering from 1983 to 2001 with a student intake of 120. From 2002, the student intake is 60.</p>
-  
-          <p>The department was awarded accreditation by the National Board of Accreditation during 2008–2011, and reaccreditation from 2016 to 2019. The department has also started a PhD program with an intake of 10 students from the academic year 2014-15.</p>
-  
-          <p>The program’s curriculum is designed to cater to the ever-changing needs and demands of the communication industry. The focus is on holistic learning and empowering students to make significant contributions at all levels. The open elective system gives students a handful of choices to develop expertise in areas like Neural Networks, Radar Engineering, Microelectronics, Data Compression and Encryption, Satellite Communication, and Image Processing. The department features state-of-the-art hardware and software laboratories with a special focus on telecommunications.</p>
-      </div>
-  </section>
-  
-
-
+    
+    
+    
     
     <section class="challenges">
+      <section class="innerchallenge">
         <div class="infoimg">
-            <img src="./img/WEEKENDS.png" alt="">
+          <img src="./img/coddd.gif" alt="">
         </div>
         <div class="infotxt">
-            <div class="h11">
-                CODING WEEKENDS
-            </div>
-            <div class="h12">
+          <div class="abthead">
+            <h1>Coding Weekends</h1>
+          </div>
+          <div id="blurtxt">
                 10th August, 2024 - Semester End
-            </div><br>
-            <div class="h13">               
-              Coding Weekend, organized by the Electroverse Committee, is an EXTC-inclusive online coding competition held every Saturday. The event is designed to boost students' coding skills and prepare them for placements, aptitude tests, and internship opportunities. Conducted on a dedicated platform, it offers a competitive yet supportive environment where participants can enhance their problem-solving abilities while receiving valuable career guidance. By fostering consistent practice, Coding Weekend helps students build the coding expertise necessary for success in the tech industry. At the end of each semester, the top coders are awarded exciting prizes, with the top five performers’ names displayed on the department’s television, celebrating their achievements and motivating others to excel.
-            </div><br>
-            
-            <div class="h14">
+              </div><br>
+              <div class="abttxt" style="text-align: center;" >               
+                Coding Weekend, organized by the Electroverse Committee, is an EXTC-inclusive online coding competition held every Saturday. The event is designed to boost students' coding skills and prepare them for placements, aptitude tests, and internship opportunities. Conducted on a dedicated platform, it offers a competitive yet supportive environment where participants can enhance their problem-solving abilities while receiving valuable career guidance.
+              </div><br>
+              
+              <div class="btn-cont">
                 <button class="btn-reg">
-                    <a href="week.html" >Details</a> 
+                  <a href="week.html" >Details</a> 
                 </button>
                 <button class="btn-lead">
-                    <a href= "https://forms.gle/xjKbJcx86FHbLK6T8">Register</a>
+                  <a href= "https://forms.gle/xjKbJcx86FHbLK6T8">Register</a>
                 </button>
+              </div>
             </div>
-        </div>
-       
+            
+          </section>  
+        </section>
         
-    </section>
-    <section class="count-container">
-      <div class="counthead">
-        <p>TECHATHON-2025</p>
-      </div>
-      <div class="countboxmain">
-        <div class="count-box">
-          <span class="label">Days</span>
-          <span class="time-box" id="days"></span>
+        
+        
+        
+        
+        <section class="carholder">
+        <div id="default-carousel" class="relative w-full" data-carousel="slide" style="background-color: transparent; z-index: 0; border-radius: 10px;">
+        <!-- Carousel wrapper -->
+        <div class="relative h-[70vh] md:h-[80vh] lg:h-[90vh] overflow-hidden">
+         <!-- Item 1 -->
+         <div class="hidden duration-700 ease-in-out" data-carousel-item>
+             <img src="./img/WhatsApp Image 2024-09-05 at 8.11.55 PM.jpeg" class="absolute block max-w-full h-auto top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" alt="Image 1">
+         </div>
+         <!-- Item 2 -->
+         <div class="hidden duration-700 ease-in-out" data-carousel-item>
+             <img src="./img/WhatsApp Image 2024-09-05 at 8.12.40 PM (1).jpeg" class="absolute block max-w-full h-auto top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" alt="Image 2">
+         </div>
+         <!-- Item 3 -->
+         <div class="hidden duration-700 ease-in-out" data-carousel-item>
+             <img src="./img/WhatsApp Image 2024-09-05 at 8.16.51 PM.jpeg" class="absolute block max-w-full h-auto top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" alt="Image 3">
+         </div>
         </div>
-        <div class="count-box">
-          <span class="label">Hours</span>
-          <span class="time-box" id="hours"></span>
         </div>
-        <div class="count-box">
-          <span class="label">Minutes</span>
-          <span class="time-box" id="minutes"></span>
-        </div>
-        <div class="count-box">
-          <span class="label">Seconds</span>
-          <span class="time-box" id="seconds"></span>
+        </section>
+        <!-- Add a new div in front of the carousel -->
+        
+        
+        <!-- Slider indicators -->
+        
+        
+        <!-- <section class="space" style="height: 500px; width: 100%; background-color: black;">
+           
+        </section> -->
+    
+        <section class="count-container">
+          <!-- <video class="background-videeo" autoplay muted loop>
+            <source src="./img/vidooo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video> -->
+          <div class="counthead">
+              <p>TECHATHON-2025</p>
           </div>
-      </div>
-  </section>
-
-
-    <div class="timeline">
-      <h2>Timeline</h2>
-      <div class="timeline-container">
-          <div class="timeline-item green">
-              <div class="timeline-content">
-                  <h3>Launch of TECH-A-THON 2023</h3>
-                  <p>3 Jan, 2024</p>
+          <div class="countboxmain">
+              <div class="count-box">
+                  <span class="time-box" id="days"></span>
+                  <span class="label">Days</span>
+              </div>
+              <div class="count-box">
+                  <span class="time-box" id="hours"></span>
+                  <span class="label">Hours</span>
+              </div>
+              <div class="count-box">
+                  <span class="time-box" id="minutes"></span>
+                  <span class="label">Minutes</span>
+              </div>
+              <div class="count-box">
+                  <span class="time-box" id="seconds"></span>
+                  <span class="label">Seconds</span>
               </div>
           </div>
+      </section>
+      
 
-          <div class="timeline-item green">
-              <div class="timeline-content">
-                  <h3>Registration and Idea Submission</h3>
-                  <p>4 Jan, 2024</p>
-              </div>
-          </div>
 
-          <div class="timeline-item green">
-              <div class="timeline-content">
-                  <h3>Registration Close</h3>
-                  <p>8 Feb, 2024</p>
-              </div>
-          </div>
 
-          <div class="timeline-item green">
-              <div class="timeline-content">
-                  <h3>First Round</h3>
-                  <p>10 Feb, 2024</p>
-              </div>
-          </div>
+  <!-- final timeline -->
+<section class="timeline-container">
 
-          <div class="timeline-item green">
-              <div class="timeline-content">
-                  <h3>Announcement of Finalist</h3>
-                  <p>12 Feb, 2024</p>
-              </div>
-          </div>
-
-          <div class="timeline-item red">
-              <div class="timeline-content">
-                  <h3>Grand Finale of the Hackathon</h3>
-                  <p>22 Feb - 24 Feb</p>
-              </div>
-          </div>
-      </div>
+  <div class="floatin">
+    <img src="img/skul.gif" alt="">
   </div>
+  <div class="containerr">
+    <p class="timehead">TIMELINE</p>
+		<ul class="timeline">
+			<li>
+        <img src="./img/reg.gif" alt="" class="reggif">
+				<h3>Registration opens
+        </h3>
+				<p>Registration is open for tech enthusiasts, developers, and problem solvers from all backgrounds. Join us for an exhilarating 24 hours of coding, collaboration, and competition as we tackle real-world challenges and develop cutting-edge solutions</p>
+			</li>
+			<li>
+        <img src="./img/subb.gif" alt="" class="reggif">
+				<h3>Abstract Submission</h3>
+				<p>Submit your abstracts and be a part of the forefront of innovation! We invite you to share your groundbreaking ideas and research at our esteemed hackathon event. This is your opportunity to present your unique insights and solutions </p>
+			</li>
+			<li>
+        <img src="./img/close.jpg" alt="" class="reggif">
+				<h3>Registeration Closes</h3>
+				<p>Last call for registration! Time is running out to be a part of our extraordinary hackathon event. Don't miss this incredible opportunity to join a community of tech enthusiasts, developers, and innovators from around the world. Registration will close soon, so act fast and secure your spot</p>
+			</li>
+			<li>
+        <img src="./img/anno.gif" alt="" class="reggif">
+				<h3>Finalists Announcement</h3>
+				<p>Step into the limelight – the moment we've all been waiting for is here! We're thrilled to announce the finalists of our highly competitive hackathon event. After meticulous evaluation and deliberation, we've handpicked the most promising and innovative teams to move forward to the final round</p>
+			</li>
+			<li>
+        <img src="./img/hack.gif" alt="" class="reggif">
+				<h3>Hackathon Finale</h3>
+				<p>Get ready for the moment of triumph – the Hackathon Finale is just around the corner! After an intense and exhilarating journey, we've arrived at the grand finale, where the most ingenious minds will showcase their remarkable solutions.</p>
+			</li>
+			<li>
+        
+        <img src="./img/award.gif" alt="" class="reggif">
+				<h3>
+          Award Ceremony
+        </h3>
+				<p>
+          The judges deliberate, and winners are announced in various categories, celebrating outstanding projects, creativity, and teamwork. The successful conclusion of the hackathon is commemorated with an awards ceremony and well-deserved celebrations.
+        </p>
+			</li>
+			
+		</ul>
+	</div>
+
+</section>
   
+  
+<!-- <section class="abtcont">
+  <section class="abt-elec">  
+    <div class="depimg">
+      <img src="./img/extc_department.jpg" alt="Department Image">
+    </div>
+    <div class="deptxt">
+        <h1 class="dep1">DEPARTMENT OF ELECTRONICS AND TELECOMMUNICATION</h1>
+        <p>The Department was established in the year 2002 with a clear view of being a forerunner in the field of Telecommunications. The Department seeks to evolve towards excellence and adapt itself to the rapid advancements in specialized communication-related fields. This Department earlier had the nomenclature of Electronics Engineering from 1983 to 2001 with a student intake of 120. From 2002, the student intake is 60.</p>
+
+        <p>The department was awarded accreditation by the National Board of Accreditation during 2008–2011, and reaccreditation from 2016 to 2019. The department has also started a PhD program with an intake of 10 students from the academic year 2014-15.</p>
+
+        <p>The program’s curriculum is designed to cater to the ever-changing needs and demands of the communication industry. The focus is on holistic learning and empowering students to make significant contributions at all levels. The open elective system gives students a handful of choices to develop expertise in areas like Neural Networks, Radar Engineering, Microelectronics, Data Compression and Encryption, Satellite Communication, and Image Processing. The department features state-of-the-art hardware and software laboratories with a special focus on telecommunications.</p>
+    </div>
+</section>
+</section> -->
+
+
+
+
     <section class="venue-container">
         
         <section class="venue">
@@ -269,51 +335,185 @@
         </section>
     </section>
 
-    <section class="miles-container">
-        <miles class="mileshead">
+    <section class="count-container">
+        <miles class="counthead2">
             <h1>ELECTROVERSE MILESTONES</h1>
             
 
         </miles>
-        <ul class="milecontent">
+        <ul class="countboxmain">
             <li>
-                <ul class="milesubhead">
-                    <li class="mile">Events</li>
-                    <li class="mile">5</li>
+                <ul class="count-box2">
+                  <li class="time-box">5</li>
+                  <li class="label">Events</li>
                 </ul>
             </li>
             <li>
-                <ul class="milesubhead">
-                    <li class="mile">Participants</li>
-                    <li class="mile">1000+</li>
+                <ul class="count-box2">
+                  <li class="time-box">1000+</li>
+                  <li class="label">Participants</li>
                 </ul>
             </li>
             <li>
-                <ul class="milesubhead">
-                    <li class="mile">Faculty</li>
-                    <li class="mile">20+</li>
+                <ul class="count-box2">
+                  <li class="time-box">20+</li>
+                  <li class="label">Faculty</li>
                 </ul>
             </li>
             <li>
-                <ul class="milesubhead">
-                    <li class="mile">Volunteers</li>
-                    <li class="mile">25</li>
+                <ul class="count-box2">
+                  <li class="time-box">25</li>
+                    <li class="label">Volunteers</li>
                 </ul>
             </li>
             <li>
-                <ul class="milesubhead">
-                    <li class="mile">Sponsers</li>
-                    <li class="mile">10+</li>
+                <ul class="count-box2">
+                  <li class="time-box">10+</li>
+                    <li class="label">Sponsers</li>
                 </ul>
             </li>
             
         </ul>
     </section>
 
+    
+
 
     <section class="faculty">
-        
+        <div class="facbtns">
+          <button id="fac">Faculty</button>
+          <button class="comm">Committee</button>
+        </div>
+        <div class="imagecont">
+          <div class="imageholders"></div>
+          <div class="imageholders"></div>
+          <div class="imageholders"></div>
+          <div class="imageholders2"></div>
+        </div>
     </section>
+
+
+<!-- testimonials -->
+    <section id="tabs">
+      <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
+        <ul
+          class="flex flex-wrap -mb-px text-sm font-medium text-center"
+          id="default-tab"
+          data-tabs-toggle="#default-tab-content"
+          role="tablist"
+        >
+          <li class="me-2" role="presentation">
+            <button
+              class="inline-block p-4 border-b-2 rounded-t-lg"
+              id="profile-tab"
+              data-tabs-target="#profile"
+              type="button"
+              role="tab"
+              aria-controls="profile"
+              aria-selected="false"
+            >
+              <a style:"font-weight: 600">Faculty</a>
+            </button>
+          </li>
+          <li class="me-2" role="presentation">
+            <button
+              class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+              id="dashboard-tab"
+              data-tabs-target="#dashboard"
+              type="button"
+              role="tab"
+              aria-controls="dashboard"
+              aria-selected="false"
+            >
+              <a style:"font-weight: 600">Committee</a>
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div id="default-tab-content">
+        <div
+          class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800"
+          id="profile"
+          role="tabpanel"
+          aria-labelledby="profile-tab"
+          style="background-color: #fef8e1"
+        >
+          <!-- tab1 -->
+          <section id="testimonial">
+            <div id="committee">
+              <div
+                class="bg-white dark:text-gray-100"
+                style="background-color: #fef8e1"
+                id="factab1"
+              >
+              
+                <div>
+                  <div>
+                    <img src="img/thampirem.png" alt="">
+                  </div>
+                </div>
+                <div>
+                  <div>
+                    <img src="img/manirem.png" alt="">
+                  </div>
+                </div>
+                
+            </div>
+          </section>
+        </div>
+        <div
+          class="hidden p-4 rounded-lg"
+          id="dashboard"
+          role="tabpanel"
+          aria-labelledby="dashboard-tab"
+          style="background-color: #fef8e1"
+        >
+          <!-- tab2 -->
+          <section id="testimonial">
+            <div id="committee">
+              <div
+                class="bg-white dark:text-gray-100"
+                style="background-color: #fef8e1"
+              >
+                <div class="text-center">
+                  <h2 class="text-4xl font-black mb-8" style="padding-top: 1em">
+                    Committee
+                  </h2>
+                </div>
+              </div>
+            </div>
+
+            <div id="members_main">
+              <div id="img1_div">
+                <img src="./technical team.jpeg" alt="technical team" />
+                <h1>Technical Team</h1>
+              </div>
+              <div id="img2_div">
+                <img src="./event team.jpeg" alt="event team" />
+                <h1>Event Team</h1>
+              </div>
+              <div id="img2_div">
+                <img src="./markiting team.jpeg" alt="marketing team" />
+                <h1>Marketing Team</h1>
+              </div>
+              <div id="img4_div">
+                <img src="./social media team.jpeg" alt="social media team" />
+                <h1>Social Media Team</h1>
+              </div>
+              <div id="img5_div">
+                <img src="./publicity team.jpeg" alt="publicity team" />
+                <h1>Publicity Team</h1>
+              </div>
+              <div id="img6_div">
+                <img src="./photography team.jpeg" alt="photography team" />
+                <h1>Photography Team</h1>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+    <!-- testimonial end -->
 
 
     <section class="upperfoot">
@@ -529,7 +729,12 @@
                 </div>
             </div>
         </div>
-    </section>        
+    </section>
+    
+    <div data-aos="fade-up"
+    data-aos-anchor-placement="top-center">
+    hello
+</div>
 
 </body>
 <script src="electro.js"></script>

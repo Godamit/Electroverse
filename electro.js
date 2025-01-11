@@ -1,4 +1,23 @@
 
+//text
+document.addEventListener("DOMContentLoaded", () => {
+  const text = "Tech-a-thon";
+  const animatedText = document.getElementById("animated-text");
+  let index = 0;
+
+  const typeLetter = () => {
+      if (index < text.length) {
+          animatedText.textContent += text.charAt(index);
+          index++;
+          setTimeout(typeLetter, 150); // Adjust speed (150ms per letter)
+      }
+  };
+
+  typeLetter();
+});
+
+
+
 
 //hamburg
 
@@ -20,7 +39,7 @@ navMenu.addEventListener('click', () => {
 
 
 // Set the date we're counting down to
-var countDownDate = new Date("Jan 5, 2025 15:37:25").getTime();
+var countDownDate = new Date("Feb 20, 2025 15:37:25").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -78,54 +97,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-let slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  
-  // $(".slides").css('display','none');
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-
-  // $(dots[i]).removeClass("active");
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-
-
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
-
-
-setInterval(function (){
-
-
-console.log(slideIndex);
-plusSlides(1);
-
-
-
-
-}, 3000);
-
-
 function Scrollabt() {
   // Get the first element with class 'abt'
   const targetSection = document.querySelector('.abt');
@@ -145,6 +116,27 @@ function Scrollabt() {
 
 
 
+// back
 
+
+function timeline(){
+  // console.log("yes")
+	var threshold_position = window.scrollY + window.innerHeight *2/3;
+	//compare scrolltop with scrolltop on each timeline event
+	var timeline_events = document.querySelectorAll('.timeline li');
+  // console.log(timeline_events);
+  timeline_events.forEach((time_e)=>{
+    if(time_e.offsetTop + time_e.parentElement.offsetTop < threshold_position){
+      // console.log("hi");
+			time_e.classList.add('visible');
+		} else {
+      // console.log("hix");
+			time_e.classList.remove('visible');
+		}
+  })
+}
+timeline();
+
+document.addEventListener('scroll', timeline);
 
 
